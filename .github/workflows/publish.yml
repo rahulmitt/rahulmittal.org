@@ -1,0 +1,39 @@
+name: Publish site
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: windows-latest   # has the Windows fonts the CV uses
+    steps:
+      - uses: actions/checkout@v4
+      - name: Make the CV PDF from the page
+        shell: pwsh
+        run: ./build-pdf.ps1
+      - name: Collect only the public files
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory _site/cv | Out-Null
+          Copy-Item index.html _site/
+          Copy-Item cv/index.html, cv/photo.jpg, cv/CV_Rahul_Mittal_*yrs_java.pdf _site/cv/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

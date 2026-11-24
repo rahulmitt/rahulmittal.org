@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV – Rahul Mittal</title>
+<meta name="description" content="CV of Rahul Mittal, Development Architect with 19 years of experience.">
+<meta name="career-start" content="2007-01"> <!-- build-pdf.ps1 computes the years of experience from this -->
+<link rel="canonical" href="https://rahulmittal.org/cv/">
+<meta property="og:title" content="CV – Rahul Mittal">
+<meta property="og:description" content="Development Architect with 19 years of experience.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://rahulmittal.org/cv/">
+<link rel="icon" href="data:,">
+<style>
+  /* 1u = 1pt of the original A4 design. Screen enlarges it; print uses it as is. */
+  :root { --u: .13rem; --navy:#333f50; --ink:#323e4f; --blue:#00b0f0; --green:#92d050; --peri:#8eaadb; --grey:#e7e6e6; color-scheme: light; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#c9cbcf; color:#000; font:calc(6*var(--u))/1.2 Tahoma,Verdana,"DejaVu Sans",sans-serif; container-type:inline-size; overflow-wrap:break-word; }
+  ul,ol,dl,dd,p,h1,h2 { margin:0; padding:0; } ul,ol { list-style:none; } a { color:inherit; }
+  .bar { max-width:calc(595*var(--u)); margin:0 auto; padding:.75rem 1rem; display:flex; flex-wrap:wrap; gap:.5rem 1rem; align-items:center; justify-content:space-between; font-size:1rem; }
+  .bar div { display:flex; flex-wrap:wrap; gap:.5rem; } [hidden] { display:none !important; }
+  .bar a,.bar button { min-height:2.75rem; min-width:2.75rem; padding:.4rem .9rem; display:inline-flex; align-items:center; justify-content:center; font:inherit; border:1px solid var(--navy); border-radius:.3rem; background:#fff; color:var(--navy); text-decoration:none; cursor:pointer; }
+  .bar .pdf { background:var(--navy); color:#fff; } .bar button:disabled { opacity:.45; cursor:default; }
+  a:focus-visible,button:focus-visible { outline:3px solid #b35c00; outline-offset:2px; }
+  .sheet { position:relative; display:grid; grid-template-columns:minmax(0,165fr) minmax(0,430fr); grid-template-rows:auto 1fr; max-width:calc(595*var(--u)); margin:0 auto 2rem; background:var(--grey); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  h2 { font:bold calc(11*var(--u))/1.2 Calibri,Carlito,sans-serif; text-transform:uppercase; }
+  aside { grid-row:1/3; grid-column:1; background:var(--navy); color:#fff; padding:calc(8*var(--u)) calc(8*var(--u)) calc(6*var(--u)); display:flex; flex-direction:column; gap:calc(13*var(--u)); font-size:calc(7*var(--u)); }
+  .photo { width:calc(127*var(--u)); height:calc(127*var(--u)); border-radius:50%; align-self:center; object-fit:cover; }
+  aside h2 { white-space:nowrap; color:var(--blue); border-bottom:calc(1.8*var(--u)) solid var(--blue); padding-bottom:calc(1*var(--u)); margin-bottom:calc(6*var(--u)); width:calc(145*var(--u)); max-width:100%; letter-spacing:-.012em; }
+  aside .chips { gap:calc(3*var(--u)) calc(2*var(--u)); margin-right:calc(-6*var(--u)); } aside .chips li { color:#fff; padding:calc(1.5*var(--u)) calc(1.6*var(--u)); letter-spacing:-.03em; } aside .chips .brk { flex-basis:100%; height:0; padding:0; box-shadow:none; background:none; margin-top:calc(-3*var(--u)); }
+  .dots { padding-left:calc(24*var(--u)); } .dots>li { position:relative; } .dots>li::before { content:"•"; position:absolute; left:calc(-14*var(--u)); }
+  .dots a { color:var(--blue); font-weight:bold; }
+  .time { flex:1; display:flex; flex-direction:column; } .tl { flex:1; display:flex; flex-direction:column; justify-content:space-between; gap:calc(10*var(--u)); position:relative; }
+  .tl::before { content:""; position:absolute; left:calc(42*var(--u)); top:calc(5*var(--u)); bottom:0; width:calc(1.5*var(--u)); background:#fff; }
+  .tl li { display:grid; grid-template-columns:calc(34*var(--u)) 1fr; gap:calc(16*var(--u)); position:relative; align-items:start; }
+  .tl li::before { content:""; position:absolute; left:calc(37.5*var(--u)); top:calc(2*var(--u)); width:calc(10.5*var(--u)); height:calc(10.5*var(--u)); border-radius:50%; background:#fff; }
+  .yr { background:#fff; color:var(--ink); padding:calc(3*var(--u)) calc(7*var(--u)) calc(3*var(--u)) 0; text-align:center; clip-path:polygon(0 0,80% 0,100% 50%,80% 100%,0 100%); }
+  .tl div>* { display:block; font-size:calc(6*var(--u)); } .tl div>b { color:var(--green); font-size:calc(9*var(--u)); line-height:1.15; white-space:nowrap; letter-spacing:-.02em; } .tl span:not(.yr),.tl i { color:var(--peri); }
+  header { grid-column:2; margin:calc(15*var(--u)) calc(17*var(--u)) 0 calc(10*var(--u)); background:var(--navy); color:#fff; padding:calc(6*var(--u)) calc(6*var(--u)) calc(6*var(--u)) calc(13*var(--u)); min-height:calc(66*var(--u)); display:flex; justify-content:space-between; gap:calc(8*var(--u)); position:relative; box-shadow:0 1px 4px #0006; }
+  .sheet::after { content:""; position:absolute; right:0; top:0; width:calc(82*var(--u)); height:calc(150*var(--u)); background:var(--navy); clip-path:polygon(0 0,100% 0,100% 100%,86% 80%,86% 8%,9% 8%); }
+  header,main { z-index:1; }
+  h1 { font:bold calc(36*var(--u))/1.15 Calibri,Carlito,sans-serif; color:var(--blue); white-space:nowrap; }
+  header p { font:bold calc(9*var(--u))/1.3 Calibri,Carlito,sans-serif; margin-top:calc(4*var(--u)); }
+  .contact { font:calc(8*var(--u))/1.4 Calibri,Carlito,sans-serif; align-self:center; } .contact li { display:flex; gap:calc(4*var(--u)); align-items:center; } .contact img { width:calc(11*var(--u)); height:calc(9*var(--u)); object-fit:contain; flex:none; } .contact a { color:var(--blue); } .contact .w { color:#fff; text-decoration:none; } .contact .u { text-decoration:underline; }
+  main { grid-column:2; padding:calc(4*var(--u)) calc(17*var(--u)) calc(6*var(--u)) calc(10*var(--u)); }
+  main h2 { color:var(--ink); border-bottom:calc(1.8*var(--u)) solid var(--navy); margin-bottom:calc(4*var(--u)); }
+  .about { background:#fff; padding:calc(6*var(--u)) calc(8*var(--u)); font-size:calc(7*var(--u)); text-align:justify; color:var(--ink); margin-bottom:calc(5*var(--u)); box-shadow:1px 2px 4px #0005; }
+  .job { background:#fff; padding:calc(2.5*var(--u)); margin-bottom:calc(4.5*var(--u)); box-shadow:1px 2px 4px #0005; } .job:last-child { margin-bottom:0; }
+  .row { display:grid; grid-template-columns:calc(70*var(--u)) 1fr; } .row dt { background:var(--navy); color:#fff; padding:calc(.8*var(--u)) calc(6*var(--u)); border-bottom:1px solid #5a6679; } .row dd { padding:calc(.8*var(--u)) calc(6*var(--u)); border-bottom:1px solid #eee; text-align:justify; min-width:0; }
+  .hl dt,.hl dd { color:var(--blue); }
+  .ticks li { padding-left:calc(19*var(--u)); position:relative; text-align:left; } .ticks li::before { content:"✓"; position:absolute; left:0; }
+  .chips { display:flex; flex-wrap:wrap; gap:calc(2*var(--u)) calc(3*var(--u)); } .chips li { background:var(--blue); color:#44546a; font-weight:bold; font-size:calc(6*var(--u)); border-radius:calc(2*var(--u)); padding:calc(.8*var(--u)) calc(1.8*var(--u)); box-shadow:1px 1px 2px #0006; letter-spacing:-.015em; } .job .chips li:first-child { color:var(--ink); }
+  .sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+  @media screen {
+    @container (max-width: 77rem) {
+      .sheet { --u:.146rem; display:block; max-width:60rem; font-size:calc(6*var(--u)); } .contact, .contact li, .contact a, header>div { min-width:0; overflow-wrap:anywhere; }
+      .photo { max-width:100%; height:auto; aspect-ratio:1; } aside .chips { margin-right:0; } aside .brk { display:none; } aside h2 { white-space:normal; } .dots { padding-left:1.25rem; } .dots>li::before { left:-1.1rem; } .chips li { max-width:100%; } .sheet::after { display:none; } header { margin:0; flex-wrap:wrap; box-shadow:none; } h1 { font-size:min(4.5rem,11cqw); white-space:normal; } main { padding:1rem; } .tl { gap:1.25rem; }
+    }
+    @container (max-width: 34rem) { .tl li { grid-template-columns:calc(34*var(--u)) minmax(0,1fr); } .row { grid-template-columns:1fr; } .row dd { text-align:left; padding-bottom:.6rem; } .about { text-align:left; } .tl div>b { white-space:normal; } }
+  }
+  @page { size:A4; margin:0; }
+  @media print { :root { --u:1pt; font-size:100% !important; } body { background:none; container-type:normal; } .bar { display:none; } main { display:flex; flex-direction:column; justify-content:space-between; } .sheet { width:210mm; height:296.5mm; max-width:none; margin:0; overflow:hidden; } }
+</style>
+<script>
+  // F6.4: apply the saved size before the page is drawn.
+  var SIZES = [87.5, 100, 112.5, 125, 150], size = 100;
+  try { var s = parseFloat(localStorage.getItem("fontSize")); if (SIZES.indexOf(s) >= 0) size = s; } catch (e) {}
+  document.documentElement.style.fontSize = size + "%";
+</script>
+</head>
+<body>
+<nav class="bar" aria-label="Page">
+  <div><a href="../">Home</a><a class="pdf" href="CV_Rahul_Mittal_19yrs_java.pdf" download>Download PDF</a></div>
+  <div id="sizes" role="group" aria-label="Font size" hidden>
+    <button type="button" id="smaller" aria-label="Decrease font size">A−</button><button type="button" id="reset" aria-label="Reset font size">A</button><button type="button" id="larger" aria-label="Increase font size">A+</button>
+  </div>
+  <span id="status" class="sr-only" role="status"></span>
+</nav>
+<div class="sheet">
+<header>
+  <div><h1>RAHUL MITTAL</h1><p>Development Architect | Total Exp: 19 years</p></div>
+  <ul class="contact">
+    <li><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAZCAYAAADTyxWqAAACWUlEQVR4nJWUz2sTQRTHvzMkKaaJgpZAESxoLeJBUvwHPHgQWjz4owhCtr0p/gmeRBF68SR41AbbQ5KKKHjXkwctePBmmxrZpsEklZDEzZrd52H2x8zurD/eIdl98/bzvm/em2HQmVElrX/tOtP6PVMXjSoBpLqJAMag+BOgPARVBCjQRAIEJnzkAwGUKlrlAnbjeV98IKkh4NHNIt7dvSCplGJK8a1IAQAyE5NhFIP77KoS5L/z5ZofIlUgK7vy5HG4RXGQCr0mvVGsXI781J0gmy5dxIozR4LEkfZJDaBoZr1t3buoiIvD/i5INfJ+EpUB4MubYExEMMaCZ9lCH/PGJbRUYnLSy2VGTZKnwrifxA9gRjWJL0aDyUnUhFw5Gl4JfGVTA/J9fhfjWxApMzgC4Cu1hMaEMSgvnQZwGEBPKIusB/9akLfpJJ7Pzc8/PHFy7lYulzsDgAlY2S+VSfL/eNtgsbuG6ULh8qmZ47fzxwqXAGQSykS40X7TKOpjSKXTE47jTKbTqQyAVDhn5aXI+ZBUkupb6JYBIjjjsWNZVqPdOfgEYKQMLZxfYyiDSokVO65Lw+GwvmM2N4YH3z8AGMfDjCqJ21XiMeZdlMBitwzbtoeDwWCnvrf/tNs0a5ZlfQNAPAbTXckeaOpnw7Vtu93r9d5v7+6u7tW31y3Lavgl6I+T6xI4j0HPtl59+dpqvTHN1st+/8dHAH15Pbn/pQrJ5Z3/vPq62Wy/6HT2345GIxOAnfitxrIwKoRShWZn5x5ks9kigPz/AKI2fWjh/haAo/8S/BvCO++18MsBnAAAAABJRU5ErkJggg==">Bengaluru, India</li>
+    <li><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAACb0lEQVR4nJ2TTUiUURSG33O/n5kxnSyTUkxCRZpVhFo5mxb9OS2qlbSKMtwHUpsWYYIgSNCiQGgTLaKsRRD2szBsYyNWi4JJsoWjjo3JkM43833z/ZzbQqYmf5l5V5f3nPPwXs69hAJNtrSUVVWh/sDOhu80POyhBIn8YTYS7qvd50v59UAsYcz3lAIDAAKAuTNHzyma9iJvspQrlrnc3Dj6NVlSQqEot/8ziYJ+f8WtUhKKVy31NY6Uh9YWiKh75mRba9FAnQLBlZy9rkAkVKGroaKB8V9TM8tmzio0WbLrsXd9/8j4o6KBV2Zg2dJ7m7b/pWQpu+pGxgeLhQH5pUj5cClrQkoJACCWYsup7YCL0W8vLddbWMyaq0Ch9H840hQsGdgJ2JBy4LeVw3IuByGotn5PdelXBoCxaOweM08mjSwM2wEJpTvecexqycBewLVc56LHnEqkDaRtG4oQQ7ORcPdGg3Nnw5fjHa1ta31aa4y2HjxOqnhDRL7qsgB2B/yQLB8YS8me5onpFQCYj4RvCEUMSMkuGPfNnNffOBpNbggEgHftoQuQeEIk9B2ahr3lZVBBCYa8CZZCKDREJNR8P7NMm47T96ly4s6GQAB43xY64Qo8E0JUEgFB3YdKvw6/qq7rNV0XiXQGhpULbQoEgNeHG5t0XX8shPj7p3VFQbmuQVcUsJTI2A4yjgNmNpaisaotH3DH5x/TY9FYOzNfk5KTAGB7HlKmhZ9GBouZLDKOs9pMcrATsLdMWKi7TfCFdjWf14RyCYTTREIDAGb+4nnce2py6jmwyVK209O6ukBFja8B7KQiH+MLhbU/q+YByYzGeWUAAAAASUVORK5CYII="><a class="w" href="tel:+919818711367">+91-9818711367</a></li>
+    <li><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAB90lEQVR4nMWUTU/iUBSGn2uJMiMDTIgWFybNsCmSuDFEExcTf+m4dIF7N8SFiT/A8LFgQcLCAEOUoS3KvZQ7C6BYbA0zG09ykvOejzfn9r298JnW7/d1t9sdb9IrNmnqdrv6Lc7n8x/OhYpPyWRoOON5sYN/dndDOON5GIYhABJvC34iBHnKZPg+HL4jfM5mYa1X69U+WyFSw8A3DL7e3gbxIJfD9/3AB7lcUBPn50Hs+34MqRD4QqCLRb7c3wd4YJoopRiY5qrn5ITk9XWAI0lrtZqWQiCFQEqJf3DAzt0dy9zvw8Mg9s/O2KlUkFKucuuk0+lUTyYTpNZzlxIpJdO9PbZvblZ5rfEvLti+vAx6lnmlFJVKRcNCfdd1NcCv/X1+JhKkHx7CIry84JyeIo6O+HZ1FaqNjo8B+PH4CEAqlRICYDQaha5Sp9Mhsa7u6ysimWTdLMtCShngdDo9Jx0Oh/pdN9But6PSAJRKJcbj9z9YNpsVWzC/Y1FuWRalUmn1/aSkWq1iWRae50XOwOLyz2az2I0cx0EpRblcxnVdlFIf9sNC/bhNG40GWmts28ZxnCBe5uM2jSWt1+vYth1ZW+Z7vV4kqQDo9XqRQm1izWaTYrEYYNM0w0K1Wq3YY8X5+mlgIdQSFAqF0Gvzr6aU+u/Zz7G/+YWrDQeXPowAAAAASUVORK5CYII="><a class="w u" href="mailto:rahulmitt@yahoo.com">rahulmitt@yahoo.com</a></li>
+    <li><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAACfElEQVR4nO3Wv4riQBwH8O+MfxDOKxJ3QFGCusKJYJU6j2FvZyPslnJcoXA27pP4HD5EPLGws5CgIKJoZtxiiURNxkn2tttvMzCZST78kswM8J3vXIfEmVSr1YbJZPL3bb8QYjibzf58KaJer59Vx06nU+V7Kw2M8vA4GPqVANX5UsRnAar3CUWETbRtG7Zth95wMBjAtm04jqMMScqEssggAMA5x/F4RDqdvvTlcrlfjuP8ux0bWAmZerFYKCEppdhut1d9jLEpY+xZCSFLuVxWGrdarUApxWazuerXdZ2bpmlIEbVabRgVFhZCyF1FXNd9zWazwrKsQigiaCWMG0rpBbLf7wEAqVTqRQjBi8WiaLVaLBDxP+MBPMzxeAQAFItFwTkXmUxG9Ho9LfbfoRI/wGs55/AA1WqV67ouIlfifFZbvwzDuAN4rR+QSCTUEcnkR9EajQY0TYsNoJTCDzAM4x7hum7g3+G67mWByufzYIxBCHE1plQqPQRQSt/8AMdx7hHz+Tz0PNDv9y+Qp6cnUHo9Pegb8LcA0Ol0/voB7XabR/omxuMxgPD94xEAAG4BAEToXi9butfrNQghWC6XV/2VSkUK6Ha7P28BAKL/HQCgadrdqwCCK+FPEIAQcpaeeh6dA3a7ndIrAIDRaPQjCAAoHO8eQQ6Hw6cASggVyOl0ig1QRgAfBxLG2DTsuhDi7iNMpVIinU5LAZEQAMAYe9Z1nRNCXgG83F6nlL4FrQMyQGQEAJimaWSzWeFtx7ebUSKREF4Fms0mN01TCoiFAADLsgphgCgV8BJrnZhMJsuwCjiOI5rNpjIAiFkJL71eTysUCjxuBby8A7bSZcA5lYnUAAAAAElFTkSuQmCC"><a href="https://github.com/rahulmitt">https://github.com/rahulmitt</a></li>
+    <li><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAaCAYAAABLlle3AAACUUlEQVR4nOWWvWsUURTFf/fNS9RGBC0SlV31T1ALC5u1kSyCnWCbQruAZK0sLRdcEEFSWqaykSRWIUVA0EYQBS0yBMEQECxEcXfnXYv9evNmZndn0wje7t25c8+Zcz/mwf9iUvSgsvrqXWTMlTBYSyTfa9Zz8+c6n7x8q9ZGSGQzYBq8JIALzqKKU6WdOBq3L2cwMo5KY1MvLXZAIgQ3SOPB+r4QVgEz9HdwfP0WEQdfbANMY0QRERRQDIKgqe+LQp4eUNpsoT9tkemDAfxJEnYbSwgWSKi1XucmKWshlXm/Prurt/qAAIKYwr47Euicf6i1NhnUspso6sr0Lv2eyFoo73HoIlgURQRutLb6NR2TXATVUYwY4dP7GAGOnbkwERSL5fOHfQDitXtYO5K01tpg+0E9OC/hD8HBwQ+uPlonkvwmgqy8mvgPUzVM+PIxTgVvr9wknLqFhVO0u91CwDzQ8Z3ignGJ8sYHDl/cLwWan2WMnVt+zuLyGukFaVHNb6I80NIzIWKIBMps5RC0uPolUxV/55FAZrcQNDNCs9q4OoWg41SZuCTSsdMTql58uBG3v/eWg8ho9bkhwy69bak9X38JmMjgukmKnIhh7nRl4q/td4qtCkgvfiTJ/JCvL5NL3DBWsuJGwHDvhPL+3GvW74RvzGpOHXGzfh04gadqSMkCVaBeXVl/ig5+3uElxT8ruA6YeUaVFFQd+8/uPga2gDd4/ZLXZAKcB64BZ4GT9OQZoBddkwbbbBBzCOwAMfDLYzTVBpomxicS3uP+DfsLqg6xqXi9mdkAAAAASUVORK5CYII="><a href="https://in.linkedin.com/in/rahulmitt">https://in.linkedin.com/in/rahulmitt</a></li>
+  </ul>
+</header>
+<main>
+  <h2>About me</h2>
+  <p class="about">Seasoned software engineer with over <b>19 years</b> of experience in developing software solutions to enhance business productivity. Highly experienced in all aspects of SDLC and end-to-end project management, from conceptualization through delivery. Consistently recognized as a hands-on and competent leader, skilled at coordinating cross-functional teams in a fast-paced, deadline-driven environment to steer timely project completion within budgetary constraints.</p>
+  <h2>Work experience</h2>
+  <dl class="job">
+    <div class="row hl"><dt>Employer</dt><dd><b>SAP Labs</b></dd></div>
+    <div class="row"><dt>Project Description</dt><dd><b>SAP Deployment Hub</b> is a cloud platform that helps customers <i>personalize</i> their tenants quickly so that they can start using them immediately. Additionally, it also caters to various <i>integration</i> scenarios, e.g., 42K integration.</dd></div>
+    <div class="row"><dt>Roles &amp; Responsibilities</dt><dd><ul class="ticks"><li>Ownership of the product architecture in scrum/agile setup</li><li>Stakeholder management within and outside the team</li><li>Adoption of enterprise-authorized AI-assisted engineering practices using Claude</li><li>Lead the Effort Estimation, Functional &amp; Technical Grooming and Design.</li></ul></dd></div>
+    <div class="row"><dt>Technology Stack</dt><dd><ul class="chips"><li>Java</li><li>Spring Boot</li><li>Microservices</li><li>SAP BTP Cloud</li><li>SAP HANA DB</li><li>Claude</li></ul></dd></div>
+  </dl>
+  <dl class="job">
+    <div class="row hl"><dt>Employer</dt><dd><b>Wells Fargo</b></dd></div>
+    <div class="row"><dt>Project Description</dt><dd><b>Equilend-service</b> is a project under <b>Capital Markets Technology</b> that facilitates auto-borrow and auto-lending functionality for firm needs and availability of stocks.</dd></div>
+    <div class="row"><dt>Roles &amp; Responsibilities</dt><dd><ul class="ticks"><li>Fully hands-on lead developer in scrum/agile setup</li><li>Participate in the various agile ceremonies. Interface with the scrum-master, PO and various other stakeholders</li><li>Mentoring of junior developers</li><li>Designing, coding, and unit testing for the user stories assigned to me</li></ul></dd></div>
+    <div class="row"><dt>Technology Stack</dt><dd><ul class="chips"><li>Java</li><li>Spring Boot</li><li>Micro Services</li><li>Junit</li><li>Mockito</li><li>Cucumber</li></ul></dd></div>
+  </dl>
+  <dl class="job">
+    <div class="row hl"><dt>Employer</dt><dd><b>Morgan Stanley</b></dd></div>
+    <div class="row"><dt>Project Description</dt><dd><b>Customer Relationship Management</b> (CRM) is an approach to managing company's interactions with its current and future customers, in order to improve cross-team collaboration through sharing of client interactions.</dd></div>
+    <div class="row"><dt>Roles &amp; Responsibilities</dt><dd><ul class="ticks"><li>Leading and mentoring a team of 5 developers</li><li>Acting as the scrum master and running the various agile ceremonies and work the PO for requirements.</li><li>Actively participate in the design review calls</li><li>Designing, coding, and unit testing for the user stories assigned to me</li><li>Organizing the sub-department level monthly technical guild sessions for knowledge sharing</li></ul></dd></div>
+    <div class="row"><dt>Technology Stack</dt><dd><ul class="chips"><li>Java</li><li>Spring Boot</li><li>Micro Services</li><li>Junit</li><li>Mockito</li><li>Cucumber</li><li>DB2</li></ul></dd></div>
+  </dl>
+  <dl class="job">
+    <div class="row hl"><dt>Employer</dt><dd><b>JPMorgan</b></dd></div>
+    <div class="row"><dt>Project Description</dt><dd>Regulatory Reporting</dd></div>
+    <div class="row"><dt>Roles &amp; Responsibilities</dt><dd><ul class="ticks"><li>Work as an individual contributor within the team.</li><li>Interact with Business Analysts, requirement gathering and release planning.</li><li>Designing the solution, writing code, unit tests and integration tests.</li><li>Bug fixing and maintenance.</li></ul></dd></div>
+    <div class="row"><dt>Technology Stack</dt><dd><ul class="chips"><li>Java</li><li>Spring Boot</li><li>Micro Services</li><li>Junit</li><li>Mockito</li><li>Cucumber</li><li>Oracle DB</li><li>Private Cloud (Gaia)</li><li>S3</li></ul></dd></div>
+  </dl>
+  <dl class="job">
+    <div class="row hl"><dt>Employer</dt><dd><b>JPMorgan</b></dd></div>
+    <div class="row"><dt>Project Description</dt><dd><b>Equity Transfer Pricing</b> (ETP) is a project under <b>Securities Lending business</b> that funds/finances the long and short equity positions wherein, a desk with long positions lends its holdings to a desk with short positions who borrows it through <b>internalization</b> process.</dd></div>
+    <div class="row"><dt>Roles &amp; Responsibilities</dt><dd><ul class="ticks"><li>Work as an individual contributor in the team.</li><li>Interact with Business Analyst and requirement gathering and release planning.</li><li>Build the design, writing code, unit tests and integration tests.</li><li>Bug fixing and maintenance.</li></ul></dd></div>
+    <div class="row"><dt>Technology Stack</dt><dd><ul class="chips"><li>Java</li><li>Spring Boot</li><li>RESTful Services</li><li>Junit</li><li>Mockito</li><li>Oracle DB</li></ul></dd></div>
+  </dl>
+  <dl class="job">
+    <div class="row hl"><dt>Employer</dt><dd><b>Sapient Global Markets</b></dd></div>
+    <div class="row hl"><dt>Client</dt><dd>Morgan Stanley</dd></div>
+    <div class="row"><dt>Project Description</dt><dd><b>Account Management Tool</b> (AMT) comes under <b>Sales &amp; Distribution</b> BU that helps relationship managers for tier 1 &amp; 2 accounts collate all account related information such as hedge profiles, asset under management, soft dollar agreements, etc., which is reviewed by the Client-business-analytics (CBA) teams. This helps identify and pursue opportunities within these large clients and potentially help increase revenues. AMT allows CBA team to create Account-Overviews for sales before their client meetings.</dd></div>
+    <div class="row"><dt>Roles &amp; Responsibilities</dt><dd><ul class="ticks"><li>Work as an individual contributor in the team.</li><li>Client interaction and requirement gathering.</li><li>Write code and unit test cases.</li><li>Bug fixing and maintenance.</li></ul></dd></div>
+    <div class="row"><dt>Technology Stack</dt><dd><ul class="chips"><li>Java</li><li>Spring Boot</li><li>RESTful Services</li><li>Junit</li><li>Mockito</li><li>Oracle DB</li></ul></dd></div>
+  </dl>
+  <dl class="job">
+    <div class="row hl"><dt>Employer</dt><dd><b>Sapient Global Markets</b></dd></div>
+    <div class="row hl"><dt>Client</dt><dd>UBS</dd></div>
+    <div class="row"><dt>Project Description</dt><dd><b>ePrice</b> is an application that supported risk management for the equity trading desk. The project focused on enhancing and managing the EOD processes for desks in various regions, viz., LDN, STM and APAC. It involved creating a screen for viewing the <b>PnL data</b> for portfolios at region-wise desks. The screen had various options that could be toggled by the user as per the requirements. Created functionalities for <b>PnL reconciliation</b> for the EOD data (T0) with the beginning of the next day (T1). The source of the data was a Web service that returned the JSON data.</dd></div>
+    <div class="row"><dt>Roles &amp; Responsibilities</dt><dd><ul class="ticks"><li>Work as an individual contributor in the team.</li><li>Write code for various layers in the application like controller, service, DAO and UI.</li><li>End-to-end designing and creation of new functionalities in the application.</li><li>Designing, coding and unit testing.</li><li>Bug fixing and maintenance.</li></ul></dd></div>
+    <div class="row"><dt>Technology Stack</dt><dd><ul class="chips"><li>Java</li><li>Spring Boot</li><li>RESTful Services</li><li>Junit</li><li>Mockito</li><li>Oracle DB</li></ul></dd></div>
+  </dl>
+</main>
+<aside aria-label="Profile">
+  <img class="photo" src="photo.jpg" alt="Rahul Mittal" width="387" height="387">
+  <section><h2>Technical skillset</h2><ul class="chips"><li>Core Java</li><li>Multithreading</li><li>Design Patterns</li><li class="brk" aria-hidden="true"></li><li>Spring</li><li>Spring Boot</li><li>JMS</li><li>JPA</li><li>SAP HANA DB</li><li class="brk" aria-hidden="true"></li><li>Microservices</li><li>System Design</li><li>SAP BTP Cloud</li><li class="brk" aria-hidden="true"></li><li>Scrum</li><li>Agile</li><li>Claude</li><li>Junit</li><li>Mockito</li><li>Cucumber</li></ul></section>
+  <section><h2>Certifications</h2><ul class="dots"><li><b>AZ-900</b><br>Microsoft Azure Fundamentals</li></ul></section>
+  <section><h2>Open-source contributions</h2><ul class="dots"><li><b>SPRING-AI</b><br>Added <a href="https://docs.spring.io/spring-ai/reference/api/vectordbs/hana.html">support for SAP Hana DB Vector Engine</a> to <b>spring-ai</b><br>Here is my <a href="https://github.com/spring-projects/spring-ai/pull/535">PR#535</a></li></ul></section>
+  <section class="time"><h2>Career timeline</h2><ol class="tl">
+    <li><span class="yr">2023</span><div><b>SAP Labs</b><span>Nov 2023 – Till Date</span><i>(Bengaluru, Karnataka)</i><strong>Development Architect</strong></div></li>
+    <li><span class="yr">2022</span><div><b>Wells Fargo</b><span>Jun 2022 – Nov, 2023</span><i>(Bengaluru, Karnataka)</i><strong>Lead Software Engineer</strong></div></li>
+    <li><span class="yr">2020</span><div><b>Morgan Stanley</b><span>Jul 2020 – Jun 2022</span><i>(Bengaluru, Karnataka)</i><strong>Senior Manager</strong></div></li>
+    <li><span class="yr">2015</span><div><b>JPMorgan</b><span>Jun 2015 – Jun 2020</span><i>(Mumbai, Maharashtra)</i><strong>Senior Assoc (602)</strong></div></li>
+    <li><span class="yr">2012</span><div><b>Sapient Global Markets</b><span>Apr 2012 – Jun 2015</span><i>(Gurgaon, Haryana)</i><strong>Senior Associate Platform L1</strong></div></li>
+    <li><span class="yr">2010</span><div><b>IBM</b><span>Jul 2010 – Mar 2012</span><i>(Noida, Uttar Pradesh)</i><strong>Senior Software Engineer</strong></div></li>
+    <li><span class="yr">2007</span><div><b>TCS</b><span>Jan 2007 – Jun 2010</span><i>(Noida, Uttar Pradesh)</i><strong>Asst Systems Engineer</strong></div></li>
+  </ol></section>
+  <section><h2>Academics</h2><ul class="dots"><li><b>Masters</b> (MCA – 2006)</li><li><b>Graduation</b> (BCA – 2003)</li></ul></section>
+</aside>
+</div>
+<script>
+  function el(id) { return document.getElementById(id); }
+  function buttons() { el("smaller").disabled = size === SIZES[0]; el("larger").disabled = size === SIZES[SIZES.length - 1]; }
+  function setSize(v) {
+    size = v; document.documentElement.style.fontSize = size + "%";
+    try { localStorage.setItem("fontSize", size); } catch (e) {}
+    buttons(); el("status").textContent = "Font size " + size + "%";
+  }
+  function step(d) { var v = SIZES[SIZES.indexOf(size) + d]; if (v) setSize(v); }
+  el("smaller").onclick = function () { step(-1); };
+  el("larger").onclick = function () { step(1); };
+  el("reset").onclick = function () { setSize(100); };
+  buttons(); el("sizes").hidden = false;
+</script>
+</body>
+</html>

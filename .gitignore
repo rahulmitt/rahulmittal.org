@@ -1,0 +1,6 @@
+# Editor files
+.idea/
+# Made from cv/index.html by build-pdf.ps1
+cv/*.pdf
+# Local files that must not be published
+private/
