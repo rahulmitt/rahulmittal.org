@@ -22,7 +22,7 @@ jobs:
         shell: pwsh
         run: |
           New-Item -ItemType Directory _site/cv | Out-Null
-          Copy-Item index.html _site/
+          Copy-Item index.html, site.css _site/
           Copy-Item cv/index.html, cv/photo.jpg, cv/CV_Rahul_Mittal_*yrs_java.pdf _site/cv/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
