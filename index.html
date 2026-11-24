@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Rahul Mittal</title>
+<meta name="description" content="The personal website of Rahul Mittal. Profile and CV coming soon.">
+<link rel="canonical" href="https://rahulmittal.org/">
+<meta property="og:title" content="Rahul Mittal">
+<meta property="og:description" content="Profile and CV coming soon.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rahulmittal.org/">
+<link rel="icon" href="data:,">
+<style>
+  :root { --bg: #f7f8f6; --fg: #1c2522; --muted: #51605a; --accent: #17624a; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #131a17; --fg: #e8eeea; --muted: #a5b4ad; --accent: #7fd1b0; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; padding: 1.5rem;
+    display: flex; flex-direction: column;
+    background: var(--bg); color: var(--fg);
+    font-family: system-ui, sans-serif; line-height: 1.6;
+  }
+  .sizes { align-self: flex-end; display: flex; gap: .5rem; }
+  .sizes[hidden] { display: none; }
+  button {
+    min-width: 2.75rem; min-height: 2.75rem; font: inherit;
+    color: var(--fg); background: transparent;
+    border: 1px solid var(--muted); border-radius: .4rem; cursor: pointer;
+  }
+  button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  button:disabled { opacity: .45; cursor: default; }
+  main { margin: auto; width: 100%; max-width: 36rem; padding: 2rem 0; }
+  h1 { margin: 0 0 1rem; font-size: 2.5rem; line-height: 1.15; overflow-wrap: anywhere; }
+  h1::after { content: ""; display: block; width: 4rem; height: 4px; margin-top: 1rem; background: var(--accent); }
+  p { margin: 0 0 .75rem; font-size: 1.125rem; }
+  .muted { color: var(--muted); }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  @media print { :root { font-size: 100% !important; } .sizes { display: none; } }
+</style>
+<script>
+  // F6.4: apply the saved size before the page is drawn.
+  var SIZES = [87.5, 100, 112.5, 125, 150], size = 100;
+  try { var s = parseFloat(localStorage.getItem("fontSize")); if (SIZES.indexOf(s) >= 0) size = s; } catch (e) {}
+  document.documentElement.style.fontSize = size + "%";
+</script>
+</head>
+<body>
+<div class="sizes" role="group" aria-label="Font size" hidden>
+  <button type="button" id="smaller" aria-label="Decrease font size">A−</button>
+  <button type="button" id="reset" aria-label="Reset font size">A</button>
+  <button type="button" id="larger" aria-label="Increase font size">A+</button>
+</div>
+<span id="status" class="sr-only" role="status"></span>
+<main>
+  <h1>Rahul Mittal</h1>
+  <p>Welcome to my personal website.</p>
+  <p class="muted">My profile and CV are coming soon.</p>
+</main>
+<script>
+  function el(id) { return document.getElementById(id); }
+  function buttons() {
+    el("smaller").disabled = size === SIZES[0];
+    el("larger").disabled = size === SIZES[SIZES.length - 1];
+  }
+  function setSize(v) {
+    size = v;
+    document.documentElement.style.fontSize = size + "%";
+    try { localStorage.setItem("fontSize", size); } catch (e) {}
+    buttons();
+    el("status").textContent = "Font size " + size + "%";
+  }
+  function step(d) {
+    var v = SIZES[SIZES.indexOf(size) + d];
+    if (v) setSize(v);
+  }
+  el("smaller").onclick = function () { step(-1); };
+  el("larger").onclick = function () { step(1); };
+  el("reset").onclick = function () { setSize(100); };
+  buttons();
+  document.querySelector(".sizes").hidden = false;
+</script>
+</body>
+</html>
