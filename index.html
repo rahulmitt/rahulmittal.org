@@ -22,7 +22,7 @@
 </style>
 <script>
   // F6.4: apply the saved size before the page is drawn.
-  var SIZES = [87.5, 100, 112.5, 125, 150], size = 100;
+  var SIZES = [62.5, 75, 87.5, 100, 112.5, 125, 150], size = 100;
   try { var s = parseFloat(localStorage.getItem("fontSize")); if (SIZES.indexOf(s) >= 0) size = s; } catch (e) {}
   document.documentElement.style.fontSize = size + "%";
 </script>

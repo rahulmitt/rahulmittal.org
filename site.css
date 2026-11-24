@@ -11,7 +11,7 @@
 .site-head { display: flex; flex-wrap: wrap; gap: .25rem 1rem; align-items: center; justify-content: space-between; padding: .25rem .5rem; }
 .site .brand { font-size: 1.25rem; font-weight: bold; color: var(--teal); text-decoration: none; }
 .sizes, .actions { display: flex; gap: .25rem; }
-.site button, .site .btn { display: inline-flex; align-items: center; justify-content: center; min-width: 2.25rem; min-height: 1.9rem; padding: 0 .6rem; font: inherit; color: #fff; background: var(--highlighted); border: 1px solid var(--highlighted); border-radius: 2px; text-decoration: none; cursor: pointer; }
+.site button, .site .btn { display: inline-flex; align-items: center; justify-content: center; min-width: max(2.25rem, 28px); min-height: max(1.9rem, 28px); padding: 0 .6rem; font: inherit; color: #fff; background: var(--highlighted); border: 1px solid var(--highlighted); border-radius: 2px; text-decoration: none; cursor: pointer; }
 .site button:hover:enabled, .site .btn:hover { background: var(--container); color: #fff; border-color: #ccc; }
 .site button:disabled { opacity: .45; cursor: default; }
 .site a:focus-visible, .site button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
